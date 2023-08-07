@@ -29,7 +29,7 @@ function handlerImageClick(evt) {
         return
     }
     const picture = evt.target.dataset.source
-     const instance = basicLightbox.create(`<div class = "modal"> <img src = "${picture}"></div>`)
+    const instance = basicLightbox.create(`<div class = "modal"> <img src = "${picture}"></div>`)
     instance.show()
 
   
