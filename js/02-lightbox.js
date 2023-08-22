@@ -13,15 +13,4 @@ function createMarkup(arr) {
 }
 
 gallery.insertAdjacentHTML('beforeend',createMarkup(galleryItems))
-
-gallery.addEventListener('click', handlerClick)
-
-function handlerClick(evt) {
-    evt.preventDefault()
-    if (!evt.target.nodeName === "IMG" ) {
-        return
-    }
-
-    let gallery = new SimpleLightbox('.gallery a',{captionsData:"alt",captionsDelay:250});
-
-}
+let galleryNew = new SimpleLightbox('.gallery a',{captionsData:"alt",captionsDelay:250});
